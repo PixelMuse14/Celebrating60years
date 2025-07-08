@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #002d72, #0059a1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+}
+
+.box {
+  font-size: 100px;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  background-color: #0c1a2b;
+  border: 2px solid #FFD700;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 400px;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+.sixty {
+  font-size: 64px;
+  font-weight: bold;
+  color: #FFD700;
+}
+
+.footer {
+  font-size: 12px;
+  margin-top: 20px;
+  color: #ccc;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.box {
+  width: 180px;      /* bigger size */
+  height: 180px;     /* bigger size */
+  background: linear-gradient(#ffd700, #ffcc00);
+  border: 4px solid #7ab542;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  font-size: 4rem;   /* bigger emoji */
+}
